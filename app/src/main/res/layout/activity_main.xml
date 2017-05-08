@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.academy.sda.contactsview2.MainActivity">
+
+    <ImageView
+        android:id="@+id/contacts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_contacts_grey600_48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/camera"
+        app:layout_constraintLeft_toLeftOf="@+id/main_layout"
+        app:layout_constraintRight_toRightOf="@+id/main_layout"
+        app:layout_constraintTop_toTopOf="@+id/main_layout" />
+
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_camera_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_layout"
+        app:layout_constraintRight_toRightOf="@+id/main_layout"
+        app:layout_constraintTop_toTopOf="@+id/main_layout"
+        app:layout_constraintVertical_bias="0.19"
+        tools:layout_constraintBottom_creator="0"
+        tools:layout_constraintRight_creator="0"
+        tools:layout_constraintTop_creator="0" />
+
+    <ImageView
+        android:id="@+id/name_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:src="@drawable/account"
+        app:layout_constraintLeft_toLeftOf="@+id/main_layout"
+        app:layout_constraintTop_toBottomOf="@+id/contacts" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/phone_text"
+        app:layout_constraintLeft_toLeftOf="@+id/name_icon"
+        app:layout_constraintRight_toRightOf="@+id/main_layout"
+        app:layout_constraintTop_toTopOf="@+id/contacts"
+        />
+    <EditText
+        android:id="@+id/phone_text"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/name_icon"
+        app:layout_constraintRight_toRightOf="@+id/main_layout"
+        app:layout_constraintTop_toTopOf="@+id/contacts"
+        />
+
+</android.support.constraint.ConstraintLayout>
